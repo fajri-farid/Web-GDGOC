@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "GoogleSansDisplay-Bold";
+  src: url(assets/fonts/GoogleSansDisplay-Bold.ttf?v=1.0) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GoogleSansDisplay-Regular";
+  src: url(assets/fonts/GoogleSansDisplay-Regular.ttf?v=1.0) format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+/* NAVBAR START */
+
+.hero-wrapper {
+  position: relative;
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/img/background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+nav {
+  background-color: transparent;
+  padding-top: 4rem;
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav button {
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 6rem;
+}
+
+.logo img {
+  width: 10rem;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* NAVBAR END */
+
+/* MAIN START */
+
+/* member */
+#member {
+  background-color: #4285f4;
+  color: #f6f6f6;
+  padding: 1rem 2.2rem;
+  border: 2px solid #4285f4;
+}
+
+#member button:hover {
+  background-color: #357ae8;
+}
+
+/* info session */
+#info-session {
+  background-color: #f6f6f6;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 1rem 1.6rem;
+}
+
+#info-session button:hover {
+  background-color: #e0e0e0;
+}
+
+/* HEADER END */
+
+/* HOME START */
+#home {
+  font-family: "GoogleSansDisplay-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 88vh; */
+  height: calc(100vh - 5rem);
+  text-align: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+#home img {
+  width: 94px;
+  height: 45px;
+}
+
+#home .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#home p {
+  font-size: 1.8rem;
+}
+
+#home button {
+  font-family: "GoogleSansDisplay-Regular";
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+#home .down-icon {
+  width: 33px;
+  height: 27px;
+}
+
+/* HOME END */
+
+/* ABOUT START */
+#about {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+}
+
+.about-container {
+  margin: 0 6rem;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+/* ABOUT END */
+
+/* MAIN END */
