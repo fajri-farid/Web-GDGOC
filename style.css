@@ -493,4 +493,183 @@ main {
 
 /* TESTIMONI END */
 
+/* FAQ START */
+#faq {
+  padding: 5rem 0;
+}
+
+.faq-container h1 {
+  font-family: "GoogleSansDisplay-Bold";
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+}
+
+.faq-question {
+  padding: clamp(15px, 3vw, 25px);
+  background: white;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  /* font-size: clamp(0.9rem, 2vw, 1.1rem); */
+  font-size: 1.2rem;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #f8f8f8;
+}
+
+.faq-answer {
+  padding: 0 clamp(15px, 3vw, 25px);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #666;
+  background: #fafafa;
+  /* font-size: clamp(0.85rem, 1.8vw, 1rem); */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faq-answer.active {
+  padding: clamp(15px, 3vw, 25px);
+  max-height: 300px;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.faq-question.active {
+  position: relative;
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.faq-answer a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 480px) {
+  .faq-container {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .faq-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faq-container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .faq-container {
+    max-width: 1000px;
+    padding: 40px;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* FAQ END */
+
+/* FOOTER START */
+#footer {
+  padding: 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.footer-container a {
+  color: black;
+}
+
+.footer-container a:hover {
+  color: #4285f4;
+}
+
+#sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+#sosmed img:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(82%) saturate(2157%)
+    hue-rotate(202deg) brightness(98%) contrast(98%);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#copyright {
+  color: black;
+}
+
+#copyright .fa-copyright {
+  font-size: 0.8rem; 
+  vertical-align: middle;
+  margin-right: 4px; 
+}
+
+#copyright p {
+  display: flex;
+  align-items: center;
+}
+
+/* FOOTER END */
+
 /* MAIN END */
