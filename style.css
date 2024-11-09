@@ -50,9 +50,22 @@ html {
 
 nav {
   background-color: transparent;
-  padding-top: 1rem;
-  /* padding: 10px 20px; */
-  position: relative;
+  padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Navbar saat di-scroll, warna dan tinggi berubah */
+nav.scrolled {
+  background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav button {
@@ -660,9 +673,9 @@ main {
 }
 
 #copyright .fa-copyright {
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
   vertical-align: middle;
-  margin-right: 4px; 
+  margin-right: 4px;
 }
 
 #copyright p {
