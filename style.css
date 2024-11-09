@@ -615,4 +615,61 @@ main {
 
 /* FAQ END */
 
+/* FOOTER START */
+#footer {
+  padding: 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.footer-container a {
+  color: black;
+}
+
+.footer-container a:hover {
+  color: #4285f4;
+}
+
+#sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+#sosmed img:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(82%) saturate(2157%)
+    hue-rotate(202deg) brightness(98%) contrast(98%);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#copyright {
+  color: black;
+}
+
+#copyright .fa-copyright {
+  font-size: 0.8rem; 
+  vertical-align: middle;
+  margin-right: 4px; 
+}
+
+#copyright p {
+  display: flex;
+  align-items: center;
+}
+
+/* FOOTER END */
+
 /* MAIN END */
