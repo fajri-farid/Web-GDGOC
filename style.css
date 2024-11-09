@@ -294,8 +294,8 @@ main {
   padding: 3rem 0;
   background-color: #4285f4;
   color: white;
-  margin-left: -6rem; /* Menghilangkan margin kiri */
-  margin-right: -6rem; /* Menghilangkan margin kanan */
+  margin-left: -6rem;
+  margin-right: -6rem;
   gap: 2rem;
 }
 
