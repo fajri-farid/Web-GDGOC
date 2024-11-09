@@ -285,7 +285,7 @@ main {
 /* WHY END */
 
 /* CTO MEMBER START */
-.call-to-action {
+#call-to-action {
   font-family: "GoogleSansDisplay-Bold";
   display: flex;
   flex-direction: column;
@@ -306,7 +306,7 @@ main {
 /* CTO MEMBER END */
 
 /* DIVISION START */
-.division {
+#division {
   padding: 5rem 0;
 }
 
@@ -321,13 +321,176 @@ main {
 .division-container h1 {
   font-family: "GoogleSansDisplay-Bold";
   font-size: 2rem;
+  text-align: center;
 }
 
-.division img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+.division-container img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #division {
+    padding: 3rem 0;
+  }
+  .division-container h1 {
+    font-size: 1.5rem;
+  }
+  .division-container img {
+    max-width: 100%;
+  }
 }
 /* DIVISION END */
+
+/* TESTIMONI START */
+#testimoni {
+  padding: 5rem 0;
+}
+
+.testimoni-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimoni-container h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2rem;
+}
+
+/* swiper.js */
+.swiper-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: auto;
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+/* Updated navigation button positions */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  color: #4285f4;
+}
+
+.swiper-container {
+  padding: 20px 70px;
+}
+
+.quote {
+  color: #4285f4;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  min-height: 120px;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+}
+
+.profile-name {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.profile-position {
+  color: #666;
+  font-size: 0.9rem;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #4285f4;
+}
+
+@media (max-width: 1200px) {
+  .swiper-slide {
+    width: calc(100% - 20px);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-container {
+    padding: 20px;
+  }
+}
+
+/* TESTIMONI END */
 
 /* MAIN END */
