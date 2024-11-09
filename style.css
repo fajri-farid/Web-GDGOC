@@ -50,8 +50,8 @@ html {
 
 nav {
   background-color: transparent;
-  padding-top: 4rem;
-  padding: 10px 20px;
+  padding-top: 1rem;
+  /* padding: 10px 20px; */
   position: relative;
 }
 
@@ -63,7 +63,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem 6rem;
+  margin: 1rem 6rem;
 }
 
 .logo img {
@@ -132,7 +132,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   /* height: 88vh; */
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 10rem);
   text-align: center;
   gap: 2rem;
   position: relative;
@@ -176,19 +176,321 @@ button:hover {
 
 /* HOME END */
 
+main {
+  margin: 1.5rem 6rem;
+}
+
 /* ABOUT START */
 #about {
+  padding: 5rem 0;
   background-color: #f6f6f6;
-  width: 100%;
-  height: 100%;
 }
 
 .about-container {
-  margin: 0 6rem;
-  padding: 10px 20px;
-  font-size: 2rem;
+  display: flex;
+  align-items: stretch; /* Menyelaraskan tinggi elemen gambar dan teks */
+  gap: 4rem;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #202124;
+}
+
+.about-content p {
+  font-family: "GoogleSansDisplay-Regular";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #5f6368;
+  text-align: justify;
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /* ABOUT END */
+
+/* WHY START */
+#why-gdgoc {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+
+.why {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.why div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.why h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2rem;
+}
+
+.why p {
+  display: flex;
+  align-items: center;
+  font-family: "GoogleSansDisplay-Regular";
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+
+.doc-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-image img {
+  width: 100%; /* Gambar mengisi lebar kontainer */
+  max-width: 1000px; /* Maksimal lebar gambar */
+  height: auto; /* Menjaga aspek rasio */
+  object-fit: cover; /* Mengatur gambar agar sesuai dengan area */
+}
+/* WHY END */
+
+/* CTO MEMBER START */
+#call-to-action {
+  font-family: "GoogleSansDisplay-Bold";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: #4285f4;
+  color: white;
+  margin-left: -6rem;
+  margin-right: -6rem;
+  gap: 2rem;
+}
+
+.cto-button button {
+  font-family: "GoogleSansDisplay-Regular";
+  padding: 1rem 3rem;
+}
+/* CTO MEMBER END */
+
+/* DIVISION START */
+#division {
+  padding: 5rem 0;
+}
+
+.division-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.division-container h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2rem;
+  text-align: center;
+}
+
+.division-container img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #division {
+    padding: 3rem 0;
+  }
+  .division-container h1 {
+    font-size: 1.5rem;
+  }
+  .division-container img {
+    max-width: 100%;
+  }
+}
+/* DIVISION END */
+
+/* TESTIMONI START */
+#testimoni {
+  padding: 5rem 0;
+}
+
+.testimoni-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimoni-container h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2rem;
+}
+
+/* swiper.js */
+.swiper-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: auto;
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+/* Updated navigation button positions */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  color: #4285f4;
+}
+
+.swiper-container {
+  padding: 20px 70px;
+}
+
+.quote {
+  color: #4285f4;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  min-height: 120px;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+}
+
+.profile-name {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.profile-position {
+  color: #666;
+  font-size: 0.9rem;
+  font-family: "GoogleSansDisplay-Regular";
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #4285f4;
+}
+
+@media (max-width: 1200px) {
+  .swiper-slide {
+    width: calc(100% - 20px);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-container {
+    padding: 20px;
+  }
+}
+
+/* TESTIMONI END */
 
 /* MAIN END */
