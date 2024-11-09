@@ -50,8 +50,8 @@ html {
 
 nav {
   background-color: transparent;
-  padding-top: 4rem;
-  padding: 10px 20px;
+  padding-top: 1rem;
+  /* padding: 10px 20px; */
   position: relative;
 }
 
@@ -63,7 +63,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem 6rem;
+  margin: 1rem 6rem;
 }
 
 .logo img {
@@ -132,7 +132,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   /* height: 88vh; */
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 10rem);
   text-align: center;
   gap: 2rem;
   position: relative;
@@ -178,15 +178,54 @@ button:hover {
 
 /* ABOUT START */
 #about {
+  padding: 5rem 0;
   background-color: #f6f6f6;
-  width: 100%;
-  height: 100%;
 }
 
 .about-container {
-  margin: 0 6rem;
-  padding: 10px 20px;
-  font-size: 2rem;
+  display: flex;
+  align-items: stretch; /* Menyelaraskan tinggi elemen gambar dan teks */
+  gap: 4rem;
+  margin: 1.5rem 6rem;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.about-content h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #202124;
+}
+
+.about-content p {
+  font-family: "GoogleSansDisplay-Regular";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #5f6368;
+  text-align: justify;
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /* ABOUT END */
