@@ -167,7 +167,7 @@ button:hover {
   top: 100%;
   left: 0;
   width: 100%;
-  background: white;
+  background: #f6f6f6;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -367,16 +367,6 @@ main {
   #home {
     margin: 0 4rem;
   }
-
-  #call-to-action {
-    margin-left: -4rem;
-    margin-right: -4rem;
-    gap: 2rem;
-  }
-
-  .cto-container h1 {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 500px) {
@@ -386,22 +376,6 @@ main {
 
   #home {
     margin: 0 2rem;
-  }
-
-  #call-to-action {
-    font-family: "GoogleSansDisplay-Bold";
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 0;
-    background-color: #4285f4;
-    color: white;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    gap: 2rem;
-    /* max-width: 100%;
-    width: 100%; */
   }
 }
 
@@ -537,41 +511,77 @@ main {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 3rem 0;
-  background-color: #4285f4;
-  color: white;
-  margin-left: -6rem;
-  margin-right: -6rem;
   gap: 2rem;
+  background-color: #4285f4;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 2rem;
+  height: 20rem;
+}
+
+.cto-container h1 {
+  color: white;
+  font-size: 2rem;
 }
 
 .cto-button button {
+  background-color: white; /* Warna latar belakang button */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
   font-family: "GoogleSansDisplay-Regular";
   padding: 1rem 3rem;
 }
 
-@media (max-width: 1024px) {
-  #call-to-action h1 {
-    font-size: 2rem;
+.cto-button button:hover {
+  background-color: #f1f1f1; /* Efek hover */
+}
+
+@media screen and (max-width: 1000px) {
+  .cto-container h1 {
+    font-size: 1.5rem; /* Ukuran font lebih kecil di layar kecil */
+  }
+
+  #call-to-action {
+    height: 15rem;
   }
 }
 
-@media (max-width: 768px) {
-  #call-to-action h1 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  #call-to-action h1 {
-    font-size: 0.8rem;
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .cto-container h1 {
+    font-size: 1.2rem; /* Ukuran font lebih kecil di layar kecil */
   }
 
   .cto-button button {
-    padding: 0.8rem 2rem;
+    font-size: 0.9rem; /* Ukuran font button lebih kecil */
+    padding: 0.8rem 2rem; /* Mengurangi padding tombol */
+  }
+
+  #call-to-action {
+    height: auto; /* Menyesuaikan tinggi agar lebih fleksibel */
+    padding: 1.5rem; /* Mengurangi padding secara keseluruhan */
   }
 }
 
+/* Responsif untuk layar ekstra kecil */
+@media screen and (max-width: 480px) {
+  .cto-container h1 {
+    font-size: 1rem; /* Ukuran font lebih kecil lagi */
+  }
+
+  .cto-button button {
+    font-size: 0.8rem; /* Ukuran font tombol lebih kecil lagi */
+    padding: 0.7rem 1.1rem; /* Mengurangi padding tombol lebih lanjut */
+  }
+
+  #call-to-action {
+    height: auto; /* Menyesuaikan tinggi untuk layar sangat kecil */
+    padding: 1rem; /* Mengurangi padding lebih lanjut */
+  }
+}
 /* CTO MEMBER END */
 
 /* DIVISION START */
@@ -611,6 +621,7 @@ main {
     max-width: 100%;
   }
 }
+
 /* DIVISION END */
 
 /* TESTIMONI START */
@@ -882,7 +893,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .faq-container {
-    max-width: 85%;
+    max-width: 100%;
   }
 }
 
