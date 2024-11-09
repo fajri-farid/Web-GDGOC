@@ -305,4 +305,29 @@ main {
 }
 /* CTO MEMBER END */
 
+/* DIVISION START */
+.division {
+  padding: 5rem 0;
+}
+
+.division-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.division-container h1 {
+  font-family: "GoogleSansDisplay-Bold";
+  font-size: 2rem;
+}
+
+.division img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+/* DIVISION END */
+
 /* MAIN END */
