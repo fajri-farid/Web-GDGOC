@@ -773,6 +773,9 @@ main {
   width: calc(33.33% - 20px);
   transition: transform 0.3s;
   font-family: "GoogleSansDisplay-Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .swiper-button-next,
@@ -798,11 +801,12 @@ main {
 }
 
 .quote {
-  color: #4285f4;
-  font-size: 2.5rem;
   margin-bottom: 20px;
-  line-height: 1;
-  font-family: "GoogleSansDisplay-Regular";
+}
+
+.quote img {
+  width: 35px;
+  height: 20px;
 }
 
 .testimonial-text {
