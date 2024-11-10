@@ -300,26 +300,26 @@ button:hover {
 @media (max-width: 900px) {
   #home .title h1,
   #home p {
-    white-space: nowrap; 
+    white-space: nowrap;
   }
 
   #home {
-    margin: 0 2rem; 
+    margin: 0 2rem;
     gap: 1.5rem;
   }
 
   #home button {
-    font-size: 0.9rem; 
-    padding: 0.6rem 1.2rem; 
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 
   #home .down-icon {
     width: 28px;
-    height: 22px; 
+    height: 22px;
   }
 
   #home .title h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   #home p {
@@ -329,7 +329,7 @@ button:hover {
 
 @media (max-width: 600px) {
   #home {
-    margin: 0 1rem; 
+    margin: 0 1rem;
     gap: 1rem;
   }
 
@@ -359,7 +359,7 @@ button:hover {
   }
 
   #home {
-    margin: 0 1rem; 
+    margin: 0 1rem;
     gap: 1.5rem;
   }
 
@@ -608,9 +608,11 @@ main {
   justify-content: center;
   gap: 2rem;
   background-color: #4285f4;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  /* width: 100vw; */
+  /* margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%); */
+  margin-left: -4rem;
+  margin-right: -4rem;
   padding: 2rem;
   height: 20rem;
 }
@@ -621,7 +623,7 @@ main {
 }
 
 .cto-button button {
-  background-color: white; 
+  background-color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -631,16 +633,18 @@ main {
 }
 
 .cto-button button:hover {
-  background-color: #f1f1f1; 
+  background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 1000px) {
   .cto-container h1 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   #call-to-action {
     height: 15rem;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
   }
 }
 
@@ -941,9 +945,9 @@ main {
   }
 
   .swiper-slide {
-    width: 95%; 
+    width: 95%;
     padding: 15px;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 
   .quote {
