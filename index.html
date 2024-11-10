@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>GDGOC UNHAS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,7 +25,9 @@
               <a href="#"><button id="member">Daftar Member</button></a>
             </li>
             <li>
-              <a href="#"
+              <a
+                href="https://s.unhas.ac.id/GDGOCUNHASInfoSession"
+                target="_blank"
                 ><button id="info-session">Daftar Info Session</button></a
               >
             </li>
@@ -105,7 +108,7 @@
       <!-- WHY START -->
       <div id="why-gdgoc">
         <div class="why-container">
-          <div class="why">
+          <div class="why" data-aos="fade-right" data-aos-duration="1500">
             <div>
               <h1>Empowering Tech, Shaping the Future</h1>
               <h1>With GDGOC UNHAS</h1>
@@ -137,7 +140,7 @@
               </p>
             </div>
           </div>
-          <div class="doc-image">
+          <div class="doc-image" data-aos="fade-up" data-aos-duration="1000">
             <img src="assets/img/documentation.png" alt="" />
           </div>
         </div>
@@ -159,8 +162,12 @@
       <!-- 5 DIVISION Start -->
       <div id="division">
         <div class="division-container">
-          <div><h1>Belajar dan Dalami 5 Bidang Ini di GDGOC UNHAS</h1></div>
-          <div><img src="assets/img/division.png" alt="" /></div>
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>Belajar dan Dalami 5 Bidang Ini di GDGOC UNHAS</h1>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/img/division.png" alt="" />
+          </div>
         </div>
       </div>
       <!-- 5 DIVISION END -->
@@ -172,14 +179,20 @@
           <h1>Ikuti Info Session GDGOC UNHAS dan Dapatkan Jawabannya!</h1>
         </div>
         <div class="cto-button">
-          <button>Daftar Info Session Disini!</button>
+          <a href="https://s.unhas.ac.id/GDGOCUNHASInfoSession" target="_blank"
+            ><button>Daftar Info Session Disini!</button></a
+          >
         </div>
       </div>
       <!-- CALL TO JOIN INFO SESSION END -->
 
       <!-- TESTIMONI START -->
       <div id="testimoni">
-        <div class="testimoni-container">
+        <div
+          class="testimoni-container"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div><h1>Apa Kata Member Mengenai GDGOC UNHAS</h1></div>
           <div class="swiper-container">
             <div class="swiper">
@@ -484,7 +497,7 @@
           <div class="bottom">
             <div id="navigation">
               <ul>
-                <a href="#home"><li>Beranda</li></a>
+                <a href="#"><li>Beranda</li></a>
                 <a href="#about"><li>Mengenal GDGOC UNHAS</li></a>
                 <a href="#division"><li>Bidang GDGOC UNHAS</li></a>
                 <a href="#testimoni"><li>Testimoni</li></a>
@@ -515,4 +528,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="script/navbar.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
