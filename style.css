@@ -61,7 +61,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Navbar saat di-scroll, warna dan tinggi berubah */
 nav.scrolled {
   background-color: #f6f6f6;
   position: fixed;
@@ -301,26 +300,26 @@ button:hover {
 @media (max-width: 900px) {
   #home .title h1,
   #home p {
-    white-space: nowrap; /* Prevent line breaks */
+    white-space: nowrap; 
   }
 
   #home {
-    margin: 0 2rem; /* Reduce side margins */
+    margin: 0 2rem; 
     gap: 1.5rem;
   }
 
   #home button {
-    font-size: 0.9rem; /* Smaller button font */
-    padding: 0.6rem 1.2rem; /* Reduce padding for compact look */
+    font-size: 0.9rem; 
+    padding: 0.6rem 1.2rem; 
   }
 
   #home .down-icon {
     width: 28px;
-    height: 22px; /* Scale down icon size */
+    height: 22px; 
   }
 
   #home .title h1 {
-    font-size: 2rem; /* Smaller font size for medium screens */
+    font-size: 2rem; 
   }
 
   #home p {
@@ -330,7 +329,7 @@ button:hover {
 
 @media (max-width: 600px) {
   #home {
-    margin: 0 1rem; /* Further reduce margins for very small screens */
+    margin: 0 1rem; 
     gap: 1rem;
   }
 
@@ -345,11 +344,36 @@ button:hover {
   }
 
   #home .title h1 {
-    font-size: 1.5rem; /* Even smaller font size for very small screens */
+    font-size: 1.5rem;
   }
 
   #home p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 370px) {
+  #home img {
+    width: 60px;
+    height: 35px;
+  }
+
+  #home {
+    margin: 0 1rem; 
+    gap: 1.5rem;
+  }
+
+  #home .title h1 {
+    font-size: 1.2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  #home button {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.6rem;
   }
 }
 
@@ -369,9 +393,19 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   main {
     margin: 1rem 2rem;
+  }
+
+  #home {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    margin: 1rem 1rem;
   }
 
   #home {
@@ -387,7 +421,7 @@ main {
 
 .about-container {
   display: flex;
-  align-items: stretch; /* Menyelaraskan tinggi elemen gambar dan teks */
+  align-items: stretch;
   gap: 4rem;
 }
 
@@ -430,6 +464,39 @@ main {
   }
 }
 
+@media (max-width: 700px) {
+  .about-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 500px) {
+  #about {
+    padding: 2rem 0;
+    background-color: #f6f6f6;
+  }
+
+  .about-container {
+    gap: 2rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
 /* ABOUT END */
 
 /* WHY START */
@@ -459,6 +526,7 @@ main {
 .why h1 {
   font-family: "GoogleSansDisplay-Bold";
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 .why p {
@@ -476,13 +544,13 @@ main {
 }
 
 .doc-image img {
-  width: 100%; /* Gambar mengisi lebar kontainer */
-  max-width: 1000px; /* Maksimal lebar gambar */
+  width: 100%;
+  max-width: 1000px;
   height: auto; /* Menjaga aspek rasio */
   object-fit: cover; /* Mengatur gambar agar sesuai dengan area */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .why {
     flex-direction: column;
     align-items: center;
@@ -490,16 +558,43 @@ main {
   }
 
   .why h1 {
-    font-size: 1.5rem; /* Smaller font size for smaller screens */
+    font-size: 2rem;
     text-align: center;
   }
 
   .why p {
-    font-size: 1.2rem; /* Smaller font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .doc-image img {
-    max-width: 90%; /* Limit image width on smaller screens */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .why h1 {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .why p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #why-gdgoc {
+    padding: 2rem 0;
+    background-color: #f6f6f6;
+  }
+
+  .why h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .why p {
+    font-size: 1.2rem;
   }
 }
 /* WHY END */
@@ -526,7 +621,7 @@ main {
 }
 
 .cto-button button {
-  background-color: white; /* Warna latar belakang button */
+  background-color: white; 
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -536,12 +631,12 @@ main {
 }
 
 .cto-button button:hover {
-  background-color: #f1f1f1; /* Efek hover */
+  background-color: #f1f1f1; 
 }
 
 @media screen and (max-width: 1000px) {
   .cto-container h1 {
-    font-size: 1.5rem; /* Ukuran font lebih kecil di layar kecil */
+    font-size: 1.5rem; 
   }
 
   #call-to-action {
@@ -549,37 +644,36 @@ main {
   }
 }
 
-/* Responsif untuk layar kecil */
 @media screen and (max-width: 768px) {
   .cto-container h1 {
-    font-size: 1.2rem; /* Ukuran font lebih kecil di layar kecil */
+    font-size: 1.2rem;
   }
 
   .cto-button button {
-    font-size: 0.9rem; /* Ukuran font button lebih kecil */
-    padding: 0.8rem 2rem; /* Mengurangi padding tombol */
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
   }
 
   #call-to-action {
-    height: auto; /* Menyesuaikan tinggi agar lebih fleksibel */
-    padding: 1.5rem; /* Mengurangi padding secara keseluruhan */
+    height: 12rem;
+    padding: 1.5rem;
+    gap: 1rem;
   }
 }
 
-/* Responsif untuk layar ekstra kecil */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .cto-container h1 {
-    font-size: 1rem; /* Ukuran font lebih kecil lagi */
+    font-size: 0.8rem;
   }
 
   .cto-button button {
-    font-size: 0.8rem; /* Ukuran font tombol lebih kecil lagi */
-    padding: 0.7rem 1.1rem; /* Mengurangi padding tombol lebih lanjut */
+    font-size: 0.6rem;
+    padding: 0.7rem 1.1rem;
   }
 
   #call-to-action {
-    height: auto; /* Menyesuaikan tinggi untuk layar sangat kecil */
-    padding: 1rem; /* Mengurangi padding lebih lanjut */
+    height: auto;
+    padding: 1rem;
   }
 }
 /* CTO MEMBER END */
@@ -611,14 +705,24 @@ main {
 }
 
 @media (max-width: 768px) {
+  .division-container {
+    gap: 2rem;
+  }
+
   #division {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
   .division-container h1 {
     font-size: 1.5rem;
   }
   .division-container img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #division {
+    padding: 2rem 0;
   }
 }
 
@@ -639,6 +743,7 @@ main {
 .testimoni-container h1 {
   font-family: "GoogleSansDisplay-Bold";
   font-size: 2rem;
+  text-align: center;
 }
 
 /* swiper.js */
@@ -666,7 +771,6 @@ main {
   font-family: "GoogleSansDisplay-Regular";
 }
 
-/* Updated navigation button positions */
 .swiper-button-next,
 .swiper-button-prev {
   width: 40px;
@@ -760,14 +864,115 @@ main {
   .swiper-slide {
     width: calc(100% - 20px);
   }
+  .swiper-container {
+    padding: 20px;
+  }
 
+  .swiper-button-next {
+    right: -30px; /* Move next button to the right */
+  }
+
+  .swiper-button-prev {
+    left: -30px; /* Move prev button to the left */
+  }
+}
+
+@media (max-width: 799px) {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+}
 
-  .swiper-container {
+@media (max-width: 600px) {
+  #testimoni {
+    padding: 4rem 0;
+  }
+
+  .testimoni-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #testimoni {
+    padding: 3rem 0;
+  }
+
+  .swiper-slide {
+    width: 90%;
     padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-name {
+    font-size: 1rem;
+  }
+
+  .profile-position {
+    font-size: 0.8rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 350px) {
+  #testimoni {
+    padding: 2rem 0;
+  }
+
+  .swiper-slide {
+    width: 95%; 
+    padding: 15px;
+    font-size: 0.8rem; 
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .profile-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .profile-name {
+    font-size: 0.9rem;
+  }
+
+  .profile-position {
+    font-size: 0.75rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
   }
 }
 
@@ -775,7 +980,7 @@ main {
 
 /* FAQ START */
 #faq {
-  padding: 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 
 .faq-container h1 {
@@ -820,7 +1025,6 @@ main {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  /* font-size: clamp(0.9rem, 2vw, 1.1rem); */
   font-size: 1.2rem;
   line-height: 1.4;
   transition: all 0.3s ease;
@@ -837,7 +1041,6 @@ main {
   transition: all 0.3s ease;
   color: #666;
   background: #fafafa;
-  /* font-size: clamp(0.85rem, 1.8vw, 1rem); */
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -861,33 +1064,48 @@ main {
   text-decoration: underline;
 }
 
-/* Responsive Styles */
-
 @media screen and (max-width: 480px) {
   .faq-container {
     padding: 15px;
+  }
+
+  .faq-container p {
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .faq-container {
     padding: 20px;
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  .faq-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .faq-container p {
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .faq-container {
-    max-width: 95%; /* Memperlebar konten hingga hampir penuh */
-    padding: 10px; /* Kurangi padding agar konten lebih luas */
+    max-width: 95%;
+    padding: 10px;
+    max-width: 100%;
   }
 
   .faq-question {
-    font-size: 1.1rem; /* Besarkan sedikit ukuran font */
+    font-size: 1.1rem;
   }
 
   .faq-answer {
-    font-size: 1rem; /* Besarkan sedikit ukuran font */
+    font-size: 1rem;
+  }
+
+  #faq {
+    padding: 2rem 0;
   }
 }
 
@@ -953,34 +1171,34 @@ main {
 }
 
 #copyright {
-  display: flex; /* Membuat elemen anak berada dalam satu baris */
-  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  display: flex;
+  align-items: center;
   color: black;
-  font-size: 0.8rem; /* Sesuaikan ukuran font jika diperlukan */
+  font-size: 0.8rem;
 }
 
 #copyright .fa-copyright {
-  margin-right: 4px; /* Sesuaikan jarak ikon ke teks */
-  line-height: 1; /* Atur line-height untuk menjaga ikon tetap sejajar */
+  margin-right: 4px;
+  line-height: 1;
   vertical-align: middle;
 }
 
 #copyright p {
-  margin: 0; /* Menghapus margin default pada paragraf */
-  line-height: 1; /* Sesuaikan line-height agar teks tidak turun */
+  margin: 0;
+  line-height: 1;
 }
 
 #navigation ul {
   display: flex;
-  flex-wrap: wrap; /* Wrap to a new line if needed */
-  justify-content: center; /* Center the entire navigation content */
-  gap: 1rem; /* Optional: adds space between items */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #navigation li {
-  white-space: nowrap; /* Keep text on a single line */
+  white-space: nowrap;
   display: inline-block;
-  text-align: center; /* Center text within each <li> */
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -1001,14 +1219,14 @@ main {
   }
 
   .footer-container {
-    font-size: 0.8rem; /* Further reduce font size */
+    font-size: 0.8rem;
   }
 
   .bottom {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: center;
-    gap: 1rem; /* Reduce gap for compact look */
+    gap: 1rem;
   }
 
   #copyright .fa-copyright {
