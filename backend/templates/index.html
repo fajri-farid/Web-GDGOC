@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
+    />
+    <title>GDGOC UNHAS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" />
+  </head>
+  <body>
+    <!-- navbar dan home section -->
+    <div class="hero-wrapper">
+      <nav id="navbar">
+        <div class="header-content">
+          <a href="#home" class="logo">
+            <img src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}" alt="GDGOC UNHAS Logo" />
+          </a>
+
+          <ul class="nav-menu">
+            <li>
+              <a href="#"><button id="member">Daftar Member</button></a>
+            </li>
+            <li>
+              <a
+                href="https://s.unhas.ac.id/GDGOCUNHASInfoSession"
+                target="_blank"
+                ><button id="info-session">Daftar Info Session</button></a
+              >
+            </li>
+          </ul>
+
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="#"><button id="mobile-member">Daftar Member</button></a>
+            </li>
+            <li>
+              <a
+                href="https://s.unhas.ac.id/GDGOCUNHASInfoSession"
+                target="_blank"
+                ><button id="mobile-info-session">
+                  Daftar Info Session
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home section dalam hero-wrapper -->
+      <div id="home">
+        <div class="title">
+          <h1>GOOGLE DEVELOPER GROUP</h1>
+          <h1>ON CAMPUS UNHAS</h1>
+        </div>
+
+        <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="GDGOC Icon" />
+        <p>Learn, Connect, and Grow</p>
+        <a href="#about">
+          <button>
+            Telusuri Selengkapnya
+            <img
+            src="{{ url_for('static', filename='assets/icons/Down-Button.svg') }}"
+              alt="Down Icon"
+              class="down-icon"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- konten utama -->
+    <main>
+      <!-- ABOUT START -->
+      <div id="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='assets/img/about-gdgoc.webp') }}"
+              alt="GDGOC UNHAS Community Photo"
+            />
+          </div>
+          <div class="about-content">
+            <h1>Mengenal GDGOC UNHAS</h1>
+            <p>
+              GDGOC UNHAS (Google Developer Group on Campus Universitas
+              Hasanuddin) adalah komunitas dari Google bagi mahasiswa
+              Universitas Hasanuddin untuk mengeksplorasi, memahami, dan
+              menerapkan teknologi terbaru. Dengan semangat Learn, Connect, and
+              Grow, GDGOC UNHAS membuka peluang bagi anggota untuk mendalami
+              pengembangan web & mobile, data science, dan cybersecurity,
+              didukung oleh mentor berpengalaman.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT END -->
+
+      <!-- WHY START -->
+      <div id="why-gdgoc">
+        <div class="why-container">
+          <div class="why">
+            <div>
+              <h1>Empowering Tech, Shaping the Future</h1>
+              <h1>With GDGOC UNHAS</h1>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="{{ url_for('static', filename='assets/icons/Check-Mark.svg') }}"
+                  alt="Check Mark"
+                  class="check-icon"
+                />
+                Belajar Topik-Topik Teknologi Terdepan
+              </p>
+              <p>
+                <img
+                  src="{{ url_for('static', filename='assets/icons/Check-Mark.svg') }}"
+                  alt="Check Mark"
+                  class="check-icon"
+                />
+                Praktek Langsung Lewat Materi Pembelajaran dan Challange
+              </p>
+              <p>
+                <img
+                  src="{{ url_for('static', filename='assets/icons/Check-Mark.svg') }}"
+                  alt="Check Mark"
+                  class="check-icon"
+                />
+                Dapatkan Mentor dan Teman Seperjalanan
+              </p>
+            </div>
+          </div>
+          <div class="doc-image">
+            <img src="{{ url_for('static', filename='assets/img/documentation.webp') }}" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- WHY END -->
+
+      <!-- CALL TO BE A MEMBER START -->
+      <div id="call-to-action">
+        <div class="cto-container">
+          <h1>Jangan Ketinggalan!</h1>
+          <h1>Jadilah Bagian dari GDGOC UNHAS Sekarang!</h1>
+        </div>
+        <div class="cto-button">
+          <button>Gabung Sekarang!</button>
+        </div>
+      </div>
+      <!-- CALL TO BE A MEMBER END -->
+
+      <!-- 5 DIVISION Start -->
+      <div id="division">
+        <div class="division-container">
+          <div><h1>Belajar dan Dalami 5 Bidang Ini di GDGOC UNHAS</h1></div>
+          <div><img src="{{ url_for('static', filename='assets/img/division.webp') }}" alt="" /></div>
+        </div>
+      </div>
+      <!-- 5 DIVISION END -->
+
+      <!-- CALL TO JOIN INFO SESSION START -->
+      <div id="call-to-action">
+        <div class="cto-container">
+          <h1>Penasaran Dengan Kelima Bidang Tadi?</h1>
+          <h1>Ikuti Info Session GDGOC UNHAS dan Dapatkan Jawabannya!</h1>
+        </div>
+        <div class="cto-button">
+          <a href="https://s.unhas.ac.id/GDGOCUNHASInfoSession" target="_blank"
+            ><button>Daftar Info Session Disini!</button></a
+          >
+        </div>
+      </div>
+      <!-- CALL TO JOIN INFO SESSION END -->
+
+      <!-- TESTIMONI START -->
+      <div id="testimoni">
+        <div class="testimoni-container">
+          <div><h1>Apa Kata Member Mengenai GDGOC UNHAS</h1></div>
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="quote">
+                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                  </div>
+                  <p class="testimonial-text">
+                    Bergabung dengan GDGOC UNHAS memberi saya kesempatan
+                    mengikuti seminar dan pelatihan di bidang Git, pemrograman,
+                    frontend, backend, machine learning, dan pengembangan
+                    aplikasi mobile. Pengalaman ini memperluas wawasan dan
+                    memperkuat keterampilan teknis saya. Terima kasih GDGOC
+                    UNHAS!
+                  </p>
+                  <div class="profile-container">
+                    <img
+                      src="{{ url_for('static', filename='assets/img/testimoni/abil.webp') }}"
+                      alt="Muh. Abil Al Arqam"
+                      class="profile-img"
+                    />
+                    <div class="profile-info">
+                      <h4 class="profile-name">Muh. Abil Al Arqam</h4>
+                      <p class="profile-position">
+                        Mahasiswa Teknik Informatika Universitas Hasanuddin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="quote">
+                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                  </div>
+                  <p class="testimonial-text">
+                    Sebagai member GDSC 23/24, saya mendapat banyak manfaat dan
+                    wawasan, terutama dalam machine learning lewat sesi study
+                    jam. Materinya mudah dipahami dan suasananya menyenangkan.
+                    Semua kegiatan memberikan pengalaman berkesan berkat
+                    kakak-kakak yang ramah dan siap membantu.
+                  </p>
+                  <div class="profile-container">
+                    <img
+                      src="{{ url_for('static', filename='assets/img/testimoni/saida.webp') }}"
+                      alt="Saida Muthia Khadijah"
+                      class="profile-img"
+                    />
+                    <div class="profile-info">
+                      <h4 class="profile-name">Saida Muthia Khadijah</h4>
+                      <p class="profile-position">
+                        Mahasiswa Teknik Informatika Universitas Hasanuddin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3   -->
+                <div class="swiper-slide">
+                  <div class="quote">
+                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                  </div>
+                  <p class="testimonial-text">
+                    Selama bergabung di GDGoC (dulunya GDSC) banyakk hal baruu
+                    yang ku dapatt. Menurutku dari pemateri pemateri pas
+                    menjelaskan sangat mudah dipahami dan interaktif, dan juga
+                    gercep kalau ada hal yang ingin ditanyakan dan sangat
+                    menerima saran peserta study jam.
+                  </p>
+                  <div class="profile-container">
+                    <img
+                      src="{{ url_for('static', filename='assets/img/testimoni/sri.webp') }}"
+                      alt="Sri Miftahul Jannah Hamid "
+                      class="profile-img"
+                    />
+                    <div class="profile-info">
+                      <h4 class="profile-name">Sri Miftahul Jannah Hamid</h4>
+                      <p class="profile-position">
+                        Mahasiswa Management Universitas Hasanuddin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4   -->
+                <div class="swiper-slide">
+                  <div class="quote">
+                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                  </div>
+                  <p class="testimonial-text">
+                    Dengan bergabungnya saya di GDGOC ini, saya merasa semakin bersemangat untuk menimba ilmu sesuai minat saya, memperluas jaringan, dan berkolaborasi dengan sesama developer untuk saling berbagi pengetahuan dan pengalaman.
+                  </p>
+                  <div class="profile-container">
+                    <img
+                      src="{{ url_for('static', filename='assets/img/testimoni/bryan.webp') }}"
+                      alt="Sri Miftahul Jannah Hamid "
+                      class="profile-img"
+                    />
+                    <div class="profile-info">
+                      <h4 class="profile-name">Bryan Jericho</h4>
+                      <p class="profile-position">
+                        Mahasiswa Teknik Informatika Universitas Hasanuddin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                  <div class="quote">
+                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                  </div>
+                  <p class="testimonial-text">
+                    Menjadi bagian dari GDGOC adalah pengalaman luar biasa bagi
+                    perkembangan saya. Saya belajar banyak hal baru, mencoba
+                    keterampilan seperti ngoding website & mobile, mendapat
+                    teman baru, dan kenal dengan kakak core team yang selalu
+                    siap membantu. Sesi Study Jam sangat memberi wawasan
+                    berharga!
+                  </p>
+                  <div class="profile-container">
+                    <img
+                       src="{{ url_for('static', filename='assets/img/testimoni/fajri.webp') }}"
+                      alt="Muh. Fajri Farid"
+                      class="profile-img"
+                    />
+                    <div class="profile-info">
+                      <h4 class="profile-name">Muh. Fajri Farid</h4>
+                      <p class="profile-position">
+                        Mahasiswa Teknik Informatika Universitas Hasanuddin
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- TESTIMONI END -->
+
+      <!-- FAQ START -->
+      <div id="faq">
+        <div class="faq-container">
+          <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>
+                Apa itu Google Developer Group in Campus Unhas (GDGOC UNHAS)?
+              </p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Google Developer Groups On Campus Unhas (GDGOC UNHAS) adalah
+                komunitas developer di Universitas Hasanuddin yang berfokus pada
+                teknologi Google. Di sini, mahasiswa dapat belajar, berbagi
+                pengetahuan, dan berkolaborasi melalui berbagai proyek di bidang
+                teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Siapa saja yang bisa bergabung dengan GDGOC UNHAS?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Mahasiswa dari Universitas Hasanuddin maupun universitas lain
+                yang tertarik pada teknologi dapat bergabung, tanpa batasan
+                jurusan atau pengalaman.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Apakah ada biaya untuk bergabung dengan GDGOC UNHAS?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Tidak, bergabung dengan GDGOC UNHAS sepenuhnya gratis.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Bagaimana cara mendaftar atau bergabung dengan GDGOC UNHAS?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Untuk bergabung dengan GDGOC UNHAS, kamu bisa mendaftar
+                <a href="#">di sini</a> melalui formulir pendaftaran yang
+                tersedia. Setelah mendaftar, tunggu email konfirmasi mengenai
+                langkah selanjutnya dan info kegiatan komunitas.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Apa saja manfaat yang bisa saya dapatkan dengan bergabung?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Dengan bergabung di GDGOC UNHAS, kamu bisa memperluas
+                pengetahuan dan keterampilan di bidang teknologi, berkesempatan
+                untuk mengembangkan dan berkolaborasi dalam proyek teknologi,
+                mengikuti berbagai workshop dan seminar, serta memperluas
+                jaringan dengan sesama pengembang dan orang-orang yang memiliki
+                ketertarikan yang sama di bidang teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>
+                Apakah saya perlu memiliki pengalaman coding untuk bergabung?
+              </p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Tidak perlu. Komunitas ini terbuka untuk semua mahasiswa yang
+                tertarik belajar teknologi, baik yang sudah berpengalaman maupun
+                pemula. Kamu akan mendapatkan kesempatan untuk belajar dan
+                berkembang melalui berbagai kegiatan yang diselenggarakan.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>
+                Apa saja jenis acara yang biasanya diselenggarakan oleh GDGOC?
+              </p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                GDGOC UNHAS rutin mengadakan acara, workshop, seminar, dan sesi
+                pembelajaran mengenai berbagai topik teknologi. Selain itu, ada
+                juga acara kolaborasi proyek, diskusi, dan kegiatan komunitas
+                lainnya yang bertujuan untuk mengembangkan keterampilan anggota
+                di bidang teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Bagaimana saya bisa tahu acara-acara mendatang di GDGOC?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kamu bisa pantau akun Instagram, Discord, dan grup Whatsapp
+                resmi GDGOC UNHAS untuk informasi terbaru tentang acara,
+                workshop, seminar, dan kegiatan lainnya.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <p>Dimana kegiatan GDGOC biasanya diadakan?</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kegiatan GDGOC UNHAS biasanya diadakan secara online maupun
+                offline, tergantung pada jenis acara. Workshop dan seminar dapat
+                diikuti secara virtual, sedangkan acara lainnya mungkin diadakan
+                langsung di kampus atau lokasi yang telah ditentukan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ END -->
+
+      <!-- CALL TO ASKING THE QUESTION START -->
+      <div id="call-to-action">
+        <div class="cto-container">
+          <h1>Mau tahu lebih banyak soal GDGOC Unhas?</h1>
+          <h1>Kami siap bantu jawab pertanyaanmu.</h1>
+        </div>
+        <div class="cto-button">
+          <a href="https://wa.me/6281244961277" target="_blank">
+            <button>Tanyakan Langsung Disini!</button></a
+          >
+        </div>
+      </div>
+      <!-- CALL TO ASKING THE QUESTION END -->
+    </main>
+
+    <footer>
+      <div id="footer">
+        <div class="footer-container">
+          <div>
+            <div id="logo">
+              <img src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}" alt="" />
+            </div>
+          </div>
+          <div class="bottom">
+            <div id="navigation">
+              <ul>
+                <a href="#home"><li>Beranda</li></a>
+                <a href="#about"><li>Mengenal GDGOC UNHAS</li></a>
+                <a href="#division"><li>Bidang GDGOC UNHAS</li></a>
+                <a href="#testimoni"><li>Testimoni</li></a>
+                <a href="#faq"><li>FAQ</li></a>
+              </ul>
+            </div>
+            <div id="sosmed">
+              <a href="https://www.instagram.com/gdgoc.unhas/" target="_blank">
+                <img src="{{ url_for('static', filename='assets/icons/Instagram-Circle.svg') }}" alt="Instagram" />
+              </a>
+              
+              <a href="https://www.linkedin.com/company/gdgoc-universitas-hasanuddin/mycompany/" target="_blank">
+                <img src="{{ url_for('static', filename='assets/icons/LinkedIn-Circled.svg') }}" alt="LinkedIn" />
+              </a>
+              
+              <a href="https://www.youtube.com/@gdscunhas7752" target="_blank">
+                <img src="{{ url_for('static', filename='assets/icons/YouTube.svg') }}" alt="YouTube" />
+              </a>
+              
+            </div>
+            <div id="copyright">
+              <p>
+                <i class="fa-regular fa-copyright"></i>
+                2024 Google Developer Group On Campus Hasanuddin University
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script src="{{ url_for('static', filename='script/carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='script/faq.js') }}"></script>
+<script src="https://kit.fontawesome.com/de991fd127.js" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='script/navbar.js') }}"></script>
+</html>
