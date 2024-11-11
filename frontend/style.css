@@ -449,10 +449,11 @@ main {
 }
 
 .about-content h1 {
-  font-family: "GoogleSansDisplay-Bold";
+  font-family: "GoogleSansDisplay-Bold" !important;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #202124;
+  text-align: center;
 }
 
 .about-content p {
@@ -493,7 +494,7 @@ main {
   }
 
   .about-content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
@@ -595,7 +596,7 @@ main {
   }
 
   .why h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
   }
 
@@ -614,9 +615,6 @@ main {
   justify-content: center;
   gap: 2rem;
   background-color: #4285f4;
-  /* width: 100vw; */
-  /* margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%); */
   margin-left: -4rem;
   margin-right: -4rem;
   padding: 2rem;
@@ -722,9 +720,11 @@ main {
   #division {
     padding: 4rem 0;
   }
+
   .division-container h1 {
     font-size: 1.5rem;
   }
+
   .division-container img {
     max-width: 100%;
   }
@@ -733,6 +733,10 @@ main {
 @media (max-width: 500px) {
   #division {
     padding: 2rem 0;
+  }
+
+  .division-container h1 {
+    font-size: 1.2rem;
   }
 }
 
@@ -896,6 +900,10 @@ main {
   .swiper-button-prev {
     display: none;
   }
+
+  .testimoni-container h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -904,7 +912,7 @@ main {
   }
 
   .testimoni-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1088,6 +1096,10 @@ main {
 
   .faq-container p {
     font-size: 0.8rem;
+  }
+
+  .faq-title {
+    font-size: 1.3rem;
   }
 }
 
