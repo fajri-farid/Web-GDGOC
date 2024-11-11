@@ -8,8 +8,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
     />
     <title>GDGOC UNHAS</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+    />
   </head>
   <body>
     <!-- navbar dan home section -->
@@ -17,12 +23,19 @@
       <nav id="navbar">
         <div class="header-content">
           <a href="#home" class="logo">
-            <img src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}" alt="GDGOC UNHAS Logo" />
+            <img
+              src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}"
+              alt="GDGOC UNHAS Logo"
+            />
           </a>
 
           <ul class="nav-menu">
             <li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"><button id="member">Daftar Member</button></a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"
+                target="_blank"
+                ><button id="member">Daftar Member</button></a
+              >
             </li>
             <li>
               <a
@@ -43,7 +56,11 @@
         <div class="mobile-menu">
           <ul>
             <li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"><button id="mobile-member">Daftar Member</button></a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"
+                target="_blank"
+                ><button id="mobile-member">Daftar Member</button></a
+              >
             </li>
             <li>
               <a
@@ -65,13 +82,16 @@
           <h1>ON CAMPUS UNHAS</h1>
         </div>
 
-        <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="GDGOC Icon" />
+        <img
+          src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+          alt="GDGOC Icon"
+        />
         <p>Learn, Connect, and Grow</p>
-        <a href="#about" style="color: black; text-decoration: none;">
+        <a href="#about" style="color: black; text-decoration: none">
           <button>
             Telusuri Selengkapnya
             <img
-            src="{{ url_for('static', filename='assets/icons/Down-Button.svg') }}"
+              src="{{ url_for('static', filename='assets/icons/Down-Button.svg') }}"
               alt="Down Icon"
               class="down-icon"
             />
@@ -87,7 +107,7 @@
         <div class="about-container">
           <div class="about-image">
             <img
-                src="{{ url_for('static', filename='assets/img/about-gdgoc.webp') }}"
+              src="{{ url_for('static', filename='assets/img/about-gdgoc.webp') }}"
               alt="GDGOC UNHAS Community Photo"
             />
           </div>
@@ -143,7 +163,10 @@
             </div>
           </div>
           <div class="doc-image">
-            <img src="{{ url_for('static', filename='assets/img/documentation.webp') }}" alt="" />
+            <img
+              src="{{ url_for('static', filename='assets/img/documentation.webp') }}"
+              alt="documentation-photo"
+            />
           </div>
         </div>
       </div>
@@ -156,9 +179,11 @@
           <h1>Jadilah Bagian dari GDGOC UNHAS Sekarang!</h1>
         </div>
         <div class="cto-button">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"> 
-          <button>Gabung Sekarang!</button>
-        </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"
+          >
+            <button>Gabung Sekarang!</button>
+          </a>
         </div>
       </div>
       <!-- CALL TO BE A MEMBER END -->
@@ -167,7 +192,12 @@
       <div id="division">
         <div class="division-container">
           <div><h1>Belajar dan Dalami 5 Bidang Ini di GDGOC UNHAS</h1></div>
-          <div><img src="{{ url_for('static', filename='assets/img/division.webp') }}" alt="" /></div>
+          <div>
+            <img
+              src="{{ url_for('static', filename='assets/img/division.webp') }}"
+              alt="5-division"
+            />
+          </div>
         </div>
       </div>
       <!-- 5 DIVISION END -->
@@ -196,7 +226,10 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                   <div class="quote">
-                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                    <img
+                      src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+                      alt="icon-gdgoc"
+                    />
                   </div>
                   <p class="testimonial-text">
                     Bergabung dengan GDGOC UNHAS memberi saya kesempatan
@@ -224,7 +257,10 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
                   <div class="quote">
-                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                    <img
+                      src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+                      alt="icon-gdgoc"
+                    />
                   </div>
                   <p class="testimonial-text">
                     Sebagai member GDSC 23/24, saya mendapat banyak manfaat dan
@@ -251,7 +287,10 @@
                 <!-- Slide 3   -->
                 <div class="swiper-slide">
                   <div class="quote">
-                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                    <img
+                      src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+                      alt="icon-gdgoc"
+                    />
                   </div>
                   <p class="testimonial-text">
                     Selama bergabung di GDGoC (dulunya GDSC) banyakk hal baruu
@@ -278,10 +317,16 @@
                 <!-- Slide 4   -->
                 <div class="swiper-slide">
                   <div class="quote">
-                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                    <img
+                      src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+                      alt="icon-gdgoc"
+                    />
                   </div>
                   <p class="testimonial-text">
-                    Dengan bergabungnya saya di GDGOC ini, saya merasa semakin bersemangat untuk menimba ilmu sesuai minat saya, memperluas jaringan, dan berkolaborasi dengan sesama developer untuk saling berbagi pengetahuan dan pengalaman.
+                    Dengan bergabungnya saya di GDGOC ini, saya merasa semakin
+                    bersemangat untuk menimba ilmu sesuai minat saya, memperluas
+                    jaringan, dan berkolaborasi dengan sesama developer untuk
+                    saling berbagi pengetahuan dan pengalaman.
                   </p>
                   <div class="profile-container">
                     <img
@@ -301,7 +346,10 @@
                 <!-- Slide 5 -->
                 <div class="swiper-slide">
                   <div class="quote">
-                    <img src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}" alt="" />
+                    <img
+                      src="{{ url_for('static', filename='assets/icons/gdgoc.svg') }}"
+                      alt="icon-gdgoc"
+                    />
                   </div>
                   <p class="testimonial-text">
                     Menjadi bagian dari GDGOC adalah pengalaman luar biasa bagi
@@ -313,7 +361,7 @@
                   </p>
                   <div class="profile-container">
                     <img
-                       src="{{ url_for('static', filename='assets/img/testimoni/fajri.webp') }}"
+                      src="{{ url_for('static', filename='assets/img/testimoni/fajri.webp') }}"
                       alt="Muh. Fajri Farid"
                       class="profile-img"
                     />
@@ -334,7 +382,6 @@
         </div>
       </div>
 
-      
       <!-- TESTIMONI END -->
 
       <!-- FAQ START -->
@@ -392,9 +439,14 @@
             <div class="faq-answer">
               <p>
                 Untuk bergabung dengan GDGOC UNHAS, kamu bisa mendaftar
-                <a href="#">di sini</a> melalui formulir pendaftaran yang
-                tersedia. Setelah mendaftar, tunggu email konfirmasi mengenai
-                langkah selanjutnya dan info kegiatan komunitas.
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"
+                  target="_blank"
+                  >di sini</a
+                >
+                melalui formulir pendaftaran yang tersedia. Setelah mendaftar,
+                tunggu email konfirmasi mengenai langkah selanjutnya dan info
+                kegiatan komunitas.
               </p>
             </div>
           </div>
@@ -504,7 +556,10 @@
         <div class="footer-container">
           <div>
             <div id="logo">
-              <img src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}" alt="" />
+              <img
+                src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}"
+                alt="icon-gdgoc-unhas"
+              />
             </div>
           </div>
           <div class="bottom">
@@ -519,17 +574,28 @@
             </div>
             <div id="sosmed">
               <a href="https://www.instagram.com/gdgoc.unhas/" target="_blank">
-                <img src="{{ url_for('static', filename='assets/icons/Instagram-Circle.svg') }}" alt="Instagram" />
+                <img
+                  src="{{ url_for('static', filename='assets/icons/Instagram-Circle.svg') }}"
+                  alt="Instagram"
+                />
               </a>
-              
-              <a href="https://www.linkedin.com/company/gdgoc-universitas-hasanuddin/mycompany/" target="_blank">
-                <img src="{{ url_for('static', filename='assets/icons/LinkedIn-Circled.svg') }}" alt="LinkedIn" />
+
+              <a
+                href="https://www.linkedin.com/company/gdgoc-universitas-hasanuddin/mycompany/"
+                target="_blank"
+              >
+                <img
+                  src="{{ url_for('static', filename='assets/icons/LinkedIn-Circled.svg') }}"
+                  alt="LinkedIn"
+                />
               </a>
-              
+
               <a href="https://www.youtube.com/@gdscunhas7752" target="_blank">
-                <img src="{{ url_for('static', filename='assets/icons/YouTube.svg') }}" alt="YouTube" />
+                <img
+                  src="{{ url_for('static', filename='assets/icons/YouTube.svg') }}"
+                  alt="YouTube"
+                />
               </a>
-              
             </div>
             <div id="copyright">
               <p>
@@ -543,8 +609,11 @@
     </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-<script src="{{ url_for('static', filename='script/carousel.js') }}"></script>
-<script src="{{ url_for('static', filename='script/faq.js') }}"></script>
-<script src="https://kit.fontawesome.com/de991fd127.js" crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='script/navbar.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/carousel.js') }}"></script>
+  <script src="{{ url_for('static', filename='script/faq.js') }}"></script>
+  <script
+    src="https://kit.fontawesome.com/de991fd127.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="{{ url_for('static', filename='script/navbar.js') }}"></script>
 </html>
