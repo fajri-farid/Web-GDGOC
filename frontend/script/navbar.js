@@ -1,32 +1,24 @@
-window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
-  if (window.scrollY > 50 || hamburger.classList.contains("active")) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector("nav");
+  const hamburger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-const navbar = document.querySelector("nav");
-const hamburger = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector(".mobile-menu");
+  hamburger.addEventListener("click", function () {
+    this.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
-// Hamburger menu toggle
-hamburger.addEventListener("click", function () {
-  this.classList.toggle("active");
-  mobileMenu.classList.toggle("active");
+    if (this.classList.contains("active")) {
+      navbar.classList.add("scrolled");
+    } else if (window.scrollY <= 50) {
+      navbar.classList.remove("scrolled");
+    }
+  });
 
-  if (this.classList.contains("active")) {
-    navbar.classList.add("scrolled");
-  } else if (window.scrollY <= 50) {
-    navbar.classList.remove("scrolled");
-  }
-});
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 0 || hamburger.classList.contains("active")) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50 || hamburger.classList.contains("active")) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
 });

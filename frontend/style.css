@@ -162,7 +162,7 @@ button:hover {
 }
 
 .mobile-menu {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
@@ -170,10 +170,15 @@ button:hover {
   background: #f6f6f6;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .mobile-menu.active {
-  display: block;
+  max-height: 300px;
+  opacity: 1;
 }
 
 .mobile-menu ul {
@@ -208,7 +213,7 @@ button:hover {
   }
 
   .logo img {
-    width: 6rem;
+    width: 8rem;
     height: auto;
   }
 }
@@ -404,7 +409,7 @@ main {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   main {
     margin: 1rem 1rem;
   }
