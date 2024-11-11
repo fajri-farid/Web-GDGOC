@@ -19,6 +19,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  color: black;
 }
 
 body,
@@ -1057,13 +1058,16 @@ main {
   padding: clamp(15px, 3vw, 25px);
   max-height: 300px;
   background-color: #4285f4;
-  color: #fff;
+}
+
+.faq-answer.active p,
+.faq-question.active p {
+  color: white !important;
 }
 
 .faq-question.active {
   position: relative;
   background-color: #4285f4;
-  color: #fff;
 }
 
 .faq-answer a {
@@ -1156,7 +1160,7 @@ main {
   color: black;
 }
 
-.footer-container a:hover {
+.footer-container li:hover {
   color: #4285f4;
 }
 
