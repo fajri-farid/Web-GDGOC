@@ -596,7 +596,7 @@ main {
   }
 
   .why h1 {
-    font-size: 4vw;
+    font-size: 4.5vw;
     text-align: center;
   }
 
@@ -670,18 +670,19 @@ main {
 }
 
 @media screen and (max-width: 500px) {
+  #call-to-action {
+    height: 12rem;
+    padding: 3rem 0.5rem;
+    gap: 1.5rem;
+  }
+
   .cto-container h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .cto-button button {
-    font-size: 0.6rem;
-    padding: 0.7rem 1.1rem;
-  }
-
-  #call-to-action {
-    height: auto;
-    padding: 1rem;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.1rem;
   }
 }
 /* CTO MEMBER END */
@@ -718,7 +719,7 @@ main {
   }
 
   #division {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
   .division-container h1 {
@@ -732,7 +733,7 @@ main {
 
 @media (max-width: 500px) {
   #division {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   .division-container h1 {
@@ -1050,6 +1051,10 @@ main {
   font-size: 1.2rem;
   line-height: 1.4;
   transition: all 0.3s ease;
+}
+
+.fa-chevron-up {
+  color: white;
 }
 
 .faq-question:hover {
