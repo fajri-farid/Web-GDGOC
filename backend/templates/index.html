@@ -38,13 +38,6 @@
                 ><button id="member">Daftar Member</button></a
               >
             </li>
-            <li>
-              <a
-                href="https://s.unhas.ac.id/GDGOCUNHASInfoSession"
-                target="_blank"
-                ><button id="info-session">Daftar Info Session</button></a
-              >
-            </li>
           </ul>
 
           <button class="hamburger">
@@ -61,15 +54,6 @@
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd30vpOyYmjfxyEvi8nodiyywuQ6T-NDfJ4L89K1B1pxi6yog/viewform"
                 target="_blank"
                 ><button id="mobile-member">Daftar Member</button></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://s.unhas.ac.id/GDGOCUNHASInfoSession"
-                target="_blank"
-                ><button id="mobile-info-session">
-                  Daftar Info Session
-                </button></a
               >
             </li>
           </ul>
@@ -219,9 +203,7 @@
           <h1>Ikuti Info Session GDGOC UNHAS dan Dapatkan Jawabannya!</h1>
         </div>
         <div class="cto-button">
-          <a href="https://s.unhas.ac.id/GDGOCUNHASInfoSession" target="_blank"
-            ><button>Daftar Info Session Disini!</button></a
-          >
+          <button class="disabled">Daftar Info Session Disini!</button>
         </div>
       </div>
       <!-- CALL TO JOIN INFO SESSION END -->
@@ -716,11 +698,15 @@
         <div class="footer-container">
           <div>
             <div id="logo">
-              <img
-                src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}"
-                alt="icon-gdgoc-unhas"
-                loading="lazy"
-              />
+              <a
+                href="https://gdg.community.dev/gdg-on-campus-universitas-hasanuddin-makassar-indonesia/"
+                target="_blank"
+              >
+                <img
+                  src="{{ url_for('static', filename='assets/icons/gdgoc-unhas.svg') }}"
+                  alt="icon-gdgoc-unhas"
+                  loading="lazy"
+              /></a>
             </div>
           </div>
           <div class="bottom">
